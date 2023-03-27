@@ -152,7 +152,7 @@
 
  #logo {
      position: left;
-     width: 150%;
+     width: 170%;
  }
 
 :root {
@@ -4189,7 +4189,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  position: relative;
+  position: right;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
