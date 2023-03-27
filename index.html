@@ -18,16 +18,17 @@
         <main class="fxlex-shrink-0">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                
                 <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><img id="logo" href="index.html" src="Logo.png"></a>
+                    <a class="navbar-brand" href=""><img id="logo" href="index.html" src="Logo.png"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navigate">
-                            <li class="nav-item"><a class="nav-link" href="#goal-title" style="color:#155D27; font-size: 18px;">Our Goal</a></li>
+                            <li class="nav-item"><a class="nav-link" id="goalbtn" href="" style="color:#155D27; font-size: 18px;">Our Goal</a></li>
                             <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            <li class="nav-item"><a class="nav-link" href="#testimonials" style="color:#155D27; font-size: 18px">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" id="testimonialsbtn" href="" style="color:#155D27; font-size: 18px">Testimonials</a></li>
                             <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                            <li class="nav-item"><a class="nav-link" href="#team" style="color:#155D27; font-size: 18px">Who We Are</a></li>
+                            <li class="nav-item"><a class="nav-link" id="teambtn" href="" style="color:#155D27; font-size: 18px">Who We Are</a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +72,7 @@
                             <div class="float-child">
                               <div class="div2">
                                 <p class="bi-plus-circle icon"></p>
-                                <p class="goal-text">Reward service workers in your community</p>
+                                <p class="goal-text">Reward deserving service workers in your community</p>
                                 <br>
                                 <br>
                                 <br>
@@ -184,5 +185,35 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+            var goal = document.getElementById('goalbtn')
+            var testimonialsbtn = document.getElementById('testimonialsbtn')
+            var teambtn = document.getElementById('teambtn')
+            var logo = document.getElementById('logo')
+                goal.onclick = function() {
+                    var goal = document.getElementById('goal-title')
+                    goal.scrollIntoView();
+                    return false;
+                };
+                testimonialsbtn.onclick = function() {
+                    var goal = document.getElementById('testimonials')
+                    goal.scrollIntoView();
+                    return false;
+                };
+                teambtn.onclick = function() {
+                    var goal = document.getElementById('team')
+                    goal.scrollIntoView();
+                    return false;
+                };
+            
+                logo.onclick = function() {
+                    location.reload();
+                };
+
+
+            
+                
+        
+                </script>
     </body>
 </html>
