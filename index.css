@@ -91,7 +91,7 @@
   font-weight: semi bold;
   width: 50%;
   float: left;
-  padding: 20px;
+  padding: 15px;
 }  
 
 .div1 {
@@ -106,7 +106,7 @@
   white-space: nowrap;
   overflow: hidden;
   /* width: 30em; */
-  animation: type 3.5s steps(60, end);
+  /* animation: type 3.5s steps(60, end); */
 
 
       font-size: 27px;
@@ -115,6 +115,7 @@
       text-transform: uppercase;
       letter-spacing: 1px;
  }
+
  @keyframes type {
   from {
       width: 0%;
